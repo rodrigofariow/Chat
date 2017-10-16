@@ -7,3 +7,12 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.fixContent {
+    word-break: break-word;
+}
+
+.messageFormat {
+    max-width: 60%;
+    padding-top: 2%;
+}

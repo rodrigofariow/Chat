@@ -8350,3 +8350,12 @@ button.close {
   }
 }
 
+.fixContent {
+  word-break: break-word;
+}
+
+.messageFormat {
+  max-width: 60%;
+  padding-top: 2%;
+}
+

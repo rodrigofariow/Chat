@@ -1,12 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-export default class ChatMessage extends Component {
-  render() {
-    return (
-      <div>
-        <h1>{this.props.author}</h1>
-        <p>{this.props.text}</p>
-      </div>
-    );
-  }
+export default class ChatMessage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: ''
+        };
+    }
+    
+    handleEnter = (e) => {
+
+        if (e.key === 'Enter') {
+            console.log('do validate');
+        }
+
+    };
+
+
+    render() {
+        return (
+            <div>
+                <input style={{'width': '100%'}} type="text" onKeyPress={this.handleEnter}></input>
+            </div>
+        );
+    }
 }
